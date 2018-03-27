@@ -1,6 +1,7 @@
 CONFIGURAZIONE PROGETTO
 
-Per configurare l'ambiente del progetto è sufficiente eseguire setupEnv.sh
+Per configurare l'ambiente del progetto è sufficiente eseguire setupEnv.sh avendo precedentemente installato virtualenv
+
 la fase di configurazione è stata divisa in 3 parti:
 
 setupEnv.sh
@@ -14,3 +15,5 @@ Installa prima storm e tutte le sue dipendenze e poi stormpy
 
 Eseguendo setupEnv.sh verranno eseguite tutte e 3 le fasi di setup.
 Se la configurazione dovesse bloccarsi durante setupCarl.sh è possibile modificare il documento setupCarl.sh ed eseguendolo riprendere l'installazione da quel punto. Idem per setupStormpy.sh
+
+IMPORTANTE! virtualenv deve essere stato precedentemente installato dall'utente

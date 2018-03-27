@@ -5,8 +5,7 @@
 
 #Per evitare conflitti con eventuali altre versioni di python ecc... verrà creato un ambiente virtuale in cui tutte le dipendenze saranno installate
 
-#download virtualenv
-pip install virtualenv
+#ATTENZIONE! virtual env deve essere installato sul dispositivo
 
 #crete the virtual environment
 #bioloidVenv is the default name, you can change with the name you want to address to the environment
