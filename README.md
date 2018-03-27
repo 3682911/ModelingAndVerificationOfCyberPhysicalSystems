@@ -1,3 +1,0 @@
-# ModelingAndVerificationOfCyberPhysicalSystems
-# ModelingAndVerificationOfCyberPhysicalSystems
-# ModelingAndVerificationOfCyberPhysicalSystems
