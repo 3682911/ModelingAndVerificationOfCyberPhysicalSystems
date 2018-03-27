@@ -10,7 +10,7 @@ pip install virtualenv
 
 #crete the virtual environment
 #bioloidVenv is the default name, you can change with the name you want to address to the environment
-virtualenv bioloidVenv
+virtualenv --python=python3.5 bioloidEnv
 
 #con questo comando cambiamo il $PATH con il /bin di virtualenv
 source bioloidVenv/bin/activate
@@ -20,16 +20,6 @@ source bioloidVenv/bin/activate
 #python install
 sudo apt install build-essential checkinstall
 sudo apt install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
-
-#python download
-wget https://www.python.org/ftp/python/3.6.0/Python-3.6.0.tar.xz
-tar xvf Python-3.6.0.tar.xz
-
-#python install
-cd Python-3.6.0/
-./configure
-sudo make altinstall
-cd ..
 
 #installazione di setupTools
 python ez_setup.py
@@ -54,11 +44,11 @@ wget http://coppeliarobotics.com/files/V-REP_PRO_EDU_V3_5_0_Linux.tar.gz
 tar -xvzf V-REP_PRO_EDU_V3_5_0_Linux.tar.gz
 
 #perchè funzioni bisogna copiare nella cartella del progetto (questa) tre file presenti nella cartella di V-REP
-cp -i ./V-REP_PRO_EDU_V3_5_0_Linux/programming/remoteApiBindings/python/python/vrep.py ./
+cp -f ./V-REP_PRO_EDU_V3_5_0_Linux/programming/remoteApiBindings/python/python/vrep.py ./
 
-cp -i ./V-REP_PRO_EDU_V3_5_0_Linux/programming/remoteApiBindings/python/python/vrepConst.py ./
+cp -f ./V-REP_PRO_EDU_V3_5_0_Linux/programming/remoteApiBindings/python/python/vrepConst.py ./
 
-cp -i ./V-REP_PRO_EDU_V3_5_0_Linux/programming/remoteApiBindings/lib/lib/Linux/64Bit/remoteApi.so ./
+cp -f ./V-REP_PRO_EDU_V3_5_0_Linux/programming/remoteApiBindings/lib/lib/Linux/64Bit/remoteApi.so ./
 
 ./setupCarl.sh
 ./setupStormpy.sh
