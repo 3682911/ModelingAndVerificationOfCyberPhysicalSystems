@@ -12,7 +12,7 @@
 virtualenv --python=python3.5 bioloidEnv
 
 #con questo comando cambiamo il $PATH con il /bin di virtualenv
-source bioloidVenv/bin/activate
+source bioloidEnv/bin/activate
 #per rimuovere questa modifica, basta eseguire:
 # deactivate
 

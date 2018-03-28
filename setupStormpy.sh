@@ -47,6 +47,7 @@ sudo apt install cmake
 git clone https://github.com/moves-rwth/stormpy.git
 
 cd stormpy
-pip install -ve .
+#pip install -ve .
+python3 setup.py develop
 cd ..
 
